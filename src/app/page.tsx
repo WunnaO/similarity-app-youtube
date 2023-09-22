@@ -1,7 +1,13 @@
 import LargeHeading from "@/components/ui/LargeHeading";
 import Paragraph from "@/components/ui/Paragraph";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Similarity API",
+  description: "Free & open-source text similarity API",
+};
 
 export default function Home() {
   return (
