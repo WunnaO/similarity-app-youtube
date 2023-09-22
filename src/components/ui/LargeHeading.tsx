@@ -23,7 +23,7 @@ interface LargeHeadingProps
     VariantProps<typeof headingVariant> {}
 
 // eslint-disable-next-line react/display-name
-const Paragraph = forwardRef<HTMLHeadingElement, LargeHeadingProps>(
+const LargeHeading = forwardRef<HTMLHeadingElement, LargeHeadingProps>(
   ({ className, size, children, ...props }, ref) => {
     return (
       <h3
@@ -37,6 +37,6 @@ const Paragraph = forwardRef<HTMLHeadingElement, LargeHeadingProps>(
   }
 );
 
-Paragraph.displayName = "paragraph";
+LargeHeading.displayName = "LargeHeading";
 
-export default Paragraph;
+export default LargeHeading;
